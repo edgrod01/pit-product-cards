@@ -5,7 +5,6 @@ import { product1 } from '../data/products';
 
 const { act } = renderer;
 describe( 'ProductTitle', () => {
-   
 
     test('componente correctamente ', () =>{
 
@@ -30,8 +29,6 @@ describe( 'ProductTitle', () => {
             (tree as any).children[2].props.onClick();
 
         })
-
-        
 
         tree = wrapper.toJSON();
         expect((tree as any).children[1].children[0]).toBe('1');
